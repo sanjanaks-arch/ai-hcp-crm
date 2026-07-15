@@ -1,0 +1,14 @@
+# Ignore local environment keys
+.env
+.env.local
+
+# Ignore local SQLite database files
+*.db
+*.sqlite3
+crm.db
+
+# Ignore node modules and build folders
+node_modules/
+dist/
+__pycache__/
+.pytest_cache/
