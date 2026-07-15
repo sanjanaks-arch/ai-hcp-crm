@@ -12,9 +12,9 @@ from sqlalchemy.orm import Session
 from pydantic import BaseModel, Field, SecretStr
 from langchain_groq import ChatGroq
 
-from  database import engine, Base, get_db
-from  models import Interaction
-from  schemas import InteractionCreate, InteractionResponse, ChatRequest
+from database import engine, Base, get_db
+from models import Interaction
+from schemas import InteractionCreate, InteractionResponse, ChatRequest
 
 # Initialize tables
 Base.metadata.create_all(bind=engine)
